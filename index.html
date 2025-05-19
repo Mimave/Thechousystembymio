@@ -11,87 +11,82 @@
     body {
       margin: 0;
       font-family: "Georgia", serif;
-      background: linear-gradient(to right, #fdf5e6, #f0d9b5);
-      color: #4a3a24;
-      padding: 2rem;
+      background: linear-gradient(to right, #f2e7cf, #c19760);
+      color: #6a3e10;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       text-align: left;
+      padding: 2rem;
     }
     header {
       display: flex;
-      flex-wrap: wrap;
       width: 100%;
       justify-content: space-between;
       align-items: flex-start;
+      flex-wrap: wrap;
     }
     .logo {
-      text-align: right;
       flex: 1;
+      text-align: right;
     }
     .intro {
       flex: 2;
-      max-width: 600px;
+      padding-top: 2rem;
     }
     .intro h1 {
-      font-size: 2.6rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+      margin: 0;
     }
-    .intro h3 {
+    .intro h2 {
+      font-size: 1.4rem;
+      color: #8b4513;
+      margin: 10px 0 20px;
+    }
+    h3 {
       font-size: 1.2rem;
       font-weight: normal;
-      margin-bottom: 1rem;
+      color: #3a2f16;
+      margin-bottom: 40px;
     }
     .button {
       background-color: #3c6c3f;
       color: #fff;
-      padding: 10px 20px;
+      font-size: 1.1rem;
+      padding: 12px 24px;
       border: none;
       border-radius: 8px;
-      font-size: 1rem;
       cursor: pointer;
       transition: background-color 0.3s;
+      margin-bottom: 20px;
     }
     .button:hover {
       background-color: #2f5b32;
     }
-    .content {
-      margin-top: 2rem;
+    .footer {
+      font-size: 0.95rem;
+      color: #3a2f16;
+      margin-top: 3rem;
       max-width: 800px;
-      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-    .content h2, .content h3 {
-      margin-top: 1.5rem;
-      color: #4a3a24;
-    }
-    .content a {
-      color: #1a4d2e;
+    .footer a {
+      color: #3c6c3f;
       text-decoration: none;
     }
-    .content a:hover {
+    .footer a:hover {
       text-decoration: underline;
     }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.85rem;
-      color: #4a3a24;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      border-radius: 12px;
-      margin-top: 2rem;
-    }
-    @media screen and (max-width: 768px) {
-      header {
-        flex-direction: column-reverse;
-        align-items: center;
-      }
-      .intro, .logo {
-        text-align: center;
-      }
+    @media screen and (max-width: 600px) {
+      .intro h1 { font-size: 2rem; }
+      .intro h2 { font-size: 1.2rem; }
+      h3 { font-size: 1rem; }
+      .button { font-size: 1rem; padding: 10px 20px; }
+      .footer { padding: 1.2rem; }
     }
   </style>
 </head>
@@ -99,38 +94,40 @@
   <header>
     <div class="intro">
       <h1>Consultora de Agentes IA Autónomos</h1>
-      <button class="button" onclick="document.getElementById('content').scrollIntoView({behavior: 'smooth'});">Conversemos...</button>
+      <button class="button" onclick="document.getElementById('segunda').scrollIntoView({behavior: 'smooth'});">Conversemos...</button>
       <h3>... ¿Un cafecito, agua o té?</h3>
     </div>
     <div class="logo">
-      <img src="beae8c0d-67c5-4276-9437-b4feed70cd68.png" alt="Logo The Chou System by MiO" style="max-width: 180px;">
+      <img src="beae8c0d-67c5-4276-9437-b4feed70cd68.png" alt="Logo The Chou System by MiO" style="max-width: 120px;">
     </div>
   </header>
 
-  <div id="content" class="content">
-    <h2>¿Qué es un Agente IA Autónomo?</h2>
+  <div id="segunda" class="footer">
+    <p><strong>¿Qué es un Agente IA Autónomo?</strong></p>
     <p>Un agente IA autónomo es un sistema digital inteligente capaz de aprender, adaptarse y actuar por cuenta propia para ayudarte en tus proyectos, decisiones y bienestar diario.</p>
 
-    <h3>Conócenos:</h3>
+    <p style="margin-top: 2rem;"><strong>Conócenos:</strong></p>
     <p>🪞 @GPT Espejo / Contraespejo – Tu Espejo de reflexión personal…</p>
     <p>🎩 @GPT La Gracia – Productora Top digital de eventos y ceremonial-protocolo.</p>
     <p>📖 @GPT LUMINA – Editorial integral para contenidos y publicaciones.</p>
     <p>🧤 @GPT Manita Hogareña – Tu asistente resolutiva y práctica para la organización y bienestar de tu metro2.</p>
     <p>🎶 @GPT Soul Notes – Músico creativo para crear, componer y refinar letras de tus pensamientos, poemas, canciones con alma.</p>
 
-    <h3>Pickaxe Studio:</h3>
+    <p style="margin-top: 2rem;"><strong>Pickaxe Studio:</strong></p>
+    <p>📔 <a href="#">365 Retos para un Año Radiante by MiO</a></p>
+    <p>🧶 <a href="#">El Diario de la Abuela Hilo by MiO</a></p>
     <p>🔍 <a href="https://studio.pickaxe.co/STUDIOZTXWP256SDJUNVG/9BZDTRH48M" target="_blank">EvaLIA: Inteligencia de Búsqueda Web</a></p>
     <p>✉️ <a href="https://studio.pickaxe.co/STUDIOZTXWP256SDJUNVG/41N423SPOB" target="_blank">MensajerIA: Redacción, resumen y envío</a></p>
 
-    <h3>Estamos sembrando ideas, entrenando agentes y cosechando más vida…</h3>
+    <p style="margin-top: 2rem;">Estamos sembrando ideas, entrenando agentes y cosechando más vida…</p>
     <p><em>¿Y tú, cuándo siembras la tuya?</em></p>
 
-    <h3>¿Quieres tener tu propio agente?</h3>
-    <iframe src="https://form.typeform.com/to/Qwh0J1AB" allowfullscreen></iframe>
+    <p style="margin-top: 2rem;"><strong>¿Quieres tener tu propio agente?</strong></p>
+    <iframe src="https://form.typeform.com/to/Qwh0J1AB" width="100%" height="600px" frameborder="0" style="border:none; border-radius: 12px; margin-top: 1rem;" allowfullscreen></iframe>
 
-    <footer>
+    <p style="margin-top: 2rem; font-size: 0.85rem;">
       © 2025 'Green Tech' empowered by The Chou System by MiO | <a href="https://thechousystem.com">thechousystem.com</a> / <a href="https://thechousystem.app">thechousystem.app</a>
-    </footer>
+    </p>
   </div>
 </body>
 </html>
