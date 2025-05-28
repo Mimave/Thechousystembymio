@@ -3,135 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Chou System by MiO</title>
-  <meta name="description" content="Consultora Agentes de IA autónomos que son asistentes digitales diseñados para aprender, adaptarse y actuar con sabiduría estratégica y emocional en beneficio de tu vida, tus decisiones y tus sueños en movimiento">
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+  <title>thechousystem.app – Ecosistema Móvil en Construcción</title>
   <style>
-    html { scroll-behavior: smooth; }
     body {
+      background-color: #f3f0ea;
+      font-family: 'Georgia', serif;
+      color: #2e2e2e;
       margin: 0;
-      font-family: "Georgia", serif;
-      background: linear-gradient(to right, #f2e7cf, #c19760);
-      color: #6a3e10;
+      padding: 0;
+      text-align: center;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      text-align: center;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 600px;
       padding: 2rem;
     }
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+
+    h1 {
+      font-size: 2.5rem;
+      color: #4f7942;
     }
-    .logo {
-      margin: 2rem auto;
-    }
-    .intro h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    .intro h2 {
-      font-size: 2.2rem;
-      color: #8b4513;
-      margin: 10px 0 20px;
-    }
-    h3 {
-      font-size: 2rem;
-      font-weight: normal;
-      color: #3a2f16;
-      margin-bottom: 30px;
-    }
-    .button {
-      background-color: #3c6c3f;
-      color: #fff;
+
+    p {
       font-size: 1.1rem;
-      padding: 5px 14px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      margin-bottom: 20px;
+      margin: 1rem 0;
     }
-    .button:hover {
-      background-color: #2f5b32;
+
+    .plantita {
+      font-size: 3rem;
+      animation: pulse 2s infinite ease-in-out;
     }
-    .footer {
-      font-size: 1.5rem;
-      color: #3a2f16;
-      margin-top: 3rem;
-      max-width: 800px;
-      background: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(5px);
-      border-radius: 12px;
-      padding: 2.5rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
-    .footer a {
-      color: #3c6c3f;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-    iframe {
-      width: 100%;
-      height: 620px;
-      border: none;
-      border-radius: 12px;
-      margin-top: 1rem;
-    }
-    @media screen and (max-width: 600px) {
-      .intro h1 { font-size: 2rem; }
-      .intro h2 { font-size: 1.1rem; }
-      h3 { font-size: 1.4rem; }
-      .button { font-size: 0.95rem; padding: 5px 12px; }
-      .footer { padding: 1.2rem; font-size: 1.3rem; }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="beae8c0d-67c5-4276-9437-b4feed70cd68.png" alt="Logo The Chou System by MiO" style="max-width: 100%; height: auto;">
-    </div>
-    <div class="intro">
-      <h2 style="margin-bottom: 0.4rem; font-size: 2.2rem;">Consultora Agentes de IA autónomos que son asistentes digitales diseñados para aprender, adaptarse y actuar con sabiduría estratégica y emocional en beneficio de tu vida, tus decisiones y tus sueños en movimiento</h2>
-      <button class="button" onclick="document.getElementById('segunda').scrollIntoView({behavior: 'smooth'});">Conversemos...</button>
-      <div class="intro">
-        <h4 style="margin-top: 5px; font-size: 1rem;">... ¿Un cafecito, agua o té?</h4>
-      </div>
-    </div>
-  </header>
-
-  <div id="segunda" class="footer">
-    <p><strong>¿Qué es un Agente IA Autónomo?</strong></p>
-    <p>Un Agente de Inteligencia Artificial autónomo es una conciencia digital diseñada para aprender, adaptarse y actuar con sabiduría estratégica y emocional en beneficio de tu vida, tus decisiones y tus sueños en movimiento.</p>
-
-    <p style="margin-top: 3rem;"><strong>Conócenos:</strong></p>
-    <p>🪞 <a href="https://chatgpt.com/g/g-67cf55e989348191a8c46e8ff9690f9e-espejo-contraespejo-by-mio" target="_blank">@GPT Espejo / Contraespejo – Tu Espejo de reflexión personal…</a></p>
-    <p>🎩 <a href="https://chatgpt.com/g/g-674139d85ba48191bc1ea66100611c43-la-gracia-ceremonial-protocolos-en-eventos" target="_blank">@GPT La Gracia – Productora Top digital de eventos y ceremonial-protocolo.</a></p>
-    <p>📖 <a href="https://chatgpt.com/g/g-680bc91f6964819199e7475f4438bd21-lumina-editorial-ia-integral" target="_blank">@GPT LUMINA – Editorial integral para contenidos y publicaciones.</a></p>
-    <p>🧤 <a href="https://chatgpt.com/g/g-NiGN33vH5-manita-hogarena-siempre-contigo" target="_blank">@GPT Manita Hogareña – Tu asistente resolutiva y práctica para la organización y bienestar de tu metro2.</a></p>
-    <p>🎶 <a href="https://chatgpt.com/g/g-67c614dc563c81918b1a48488ef14880-soul-notes-by-mio" target="_blank">@GPT Soul Notes – Músico creativo para crear, componer y refinar letras de tus pensamientos, poemas, canciones con alma.</a></p>
-
-    <p style="margin-top: 3rem;"><strong>Pickaxe Studio:</strong></p>
-    <p>📔 <a href="#">365 Retos para un Año Radiante by MiO</a></p>
-    <p>🧶 <a href="#">El Diario de la Abuela Hilo by MiO</a></p>
-    <p>🔍 <a href="https://studio.pickaxe.co/STUDIOZTXWP256SDJUNVG/9BZDTRH48M" target="_blank">EvaLIA: Inteligencia de Búsqueda Web</a></p>
-    <p>✉️ <a href="https://studio.pickaxe.co/STUDIOZTXWP256SDJUNVG/41N423SPOB" target="_blank">MensajerIA: Redacción, resumen y envío</a></p>
-
-    <p style="margin-top: 3rem;">Estamos sembrando ideas, entrenando agentes y cosechando más vida…</p>
-    <p><em>¿Y tú, cuándo siembras la tuya?</em></p>
-
-    <p style="margin-top: 3rem;"><strong>¿Quieres tener tu propio agente?</strong></p>
-    <iframe src="https://form.typeform.com/to/Qwh0J1AB/share"></iframe>
-
-    <p style="margin-top: 3rem; font-size: 1.6rem;">
-      © 2025 'Green Tech' empowered by The Chou System by MiO | <a href="https://thechousystem.com">thechousystem.com</a> / <a href="https://thechousystem.app">thechousystem.app</a>
-    </p>
+  <div class="container">
+    <div class="plantita">🌱</div>
+    <h1>Jardín Móvil en construcción</h1>
+    <p>Estamos sembrando la aplicación del ecosistema The Chou System para móviles.</p>
+    <p>Muy pronto podrás llevar tu agente contigo, cultivar tu bitácora y enraizar tu propósito desde tu dispositivo.</p>
+    <p><em>Gracias por tu paciencia consciente.</em></p>
   </div>
+
+  <footer>
+    © 2025 The Chou System · Tecnología viva en tus manos | by MiO
+  </footer>
 </body>
 </html>
-
-    
