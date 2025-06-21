@@ -1,0 +1,9 @@
+git rm gh.page
+git rm -r src
+git rm package.json
+git rm vite.config.jsx
+git rm A
+git rm "Git add"
+git add .
+git commit -m "Replace with complete Chou System platform"
+git push --force origin main
